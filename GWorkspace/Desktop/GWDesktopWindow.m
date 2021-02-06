@@ -174,8 +174,7 @@
 - (void)orderWindow:(NSWindowOrderingMode)place 
          relativeTo:(NSInteger)otherWin
 {
-  [super orderWindow: place relativeTo: otherWin];
-  [self setLevel: NSDesktopWindowLevel];
+  [super orderWindow: NSWindowBelow relativeTo: 0];
 }
 
 - (BOOL)canBecomeKeyWindow
